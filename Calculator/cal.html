@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="cal.css">
+  <style>
+    /* Additional inline style if needed */
+  </style>
+</head>
+<body>
+  <header class="header">Calculator</header>
+  <div class="calculator">
+    <input type="text" id="result" readonly>
+    <div class="buttons">
+      <button onclick="appendValue(7)">7</button>
+      <button onclick="appendValue(8)">8</button>
+      <button onclick="appendValue(9)">9</button>
+      <button class="special" onclick="performOperation('*')">*</button>
+      
+      <button onclick="appendValue(4)">4</button>
+      <button onclick="appendValue(5)">5</button>
+      <button onclick="appendValue(6)">6</button>
+      <button class="special" onclick="performOperation('+')">+</button>
+      <button onclick="appendValue(1)">1</button>
+      <button onclick="appendValue(2)">2</button>
+      <button onclick="appendValue(3)">3</button>
+      <button class="special" onclick="performOperation('-')">-</button>
+      <button onclick="appendValue(0)">0</button>
+      <button onclick="appendValue('.')">.</button>
+      <button class="special" onclick="clearResult()">C</button>
+      <button class="special" onclick="performOperation('/')">/</button>
+
+    </div>
+    <button id="equals" onclick="calculateResult()">=</button>
+  </div>
+
+  <script src="cal.js"></script>
+</body>
+</html>

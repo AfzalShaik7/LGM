@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="stu.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2>Student Registration Form</h2>
+      <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select a gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+        
+        <label for="idCard">ID Card Number:</label>
+        <input type="text" id="idCard" name="idCard" required>
+        
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+          <option value="">Select a course</option>
+          <option value="Math">Python</option>
+          <option value="Science">Web Development</option>
+          <option value="English">Java</option>
+        </select>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    
+    <div class="details-container">
+      <h2>Registration Details</h2>
+      <div id="registrationDetails"></div>
+    </div>
+  </div>
+
+  <script src="stu.js"></script>
+</body>
+</html>
